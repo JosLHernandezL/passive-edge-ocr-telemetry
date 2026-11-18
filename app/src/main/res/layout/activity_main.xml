@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuración Asistente DiDi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 1. Tarifa Mínima -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarifa mínima (COP):"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etTarifaMinima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ej: 20000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2. Valor Mínimo por Km -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor mínimo por kilómetro (COP/km):"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etValorKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ej: 1500"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 3. Mínimo de Arrendamientos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mínimo de arrendamientos (Seguridad):"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/etMinArrendamientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Ej: 5"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Parámetros"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón Probar Voz -->
+        <Button
+            android:id="@+id/btnProbarVoz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Probar Audio en Intercomunicador"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón Ir a Accesibilidad -->
+        <Button
+            android:id="@+id/btnAccesibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir Ajustes de Accesibilidad" />
+
+    </LinearLayout>
+</ScrollView>
